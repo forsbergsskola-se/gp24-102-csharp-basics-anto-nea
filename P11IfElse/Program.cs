@@ -1,7 +1,6 @@
 ﻿Console.WriteLine("What's your age?");
     int age = Int32.Parse(Console.ReadLine());
 
-
 bool isChild = age <= 12;
 if (isChild) Console.WriteLine("You are a child.");
 

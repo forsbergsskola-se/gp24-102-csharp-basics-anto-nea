@@ -22,3 +22,32 @@ if (chanceOfSucces > roll) {
     Console.WriteLine ("Failure");
 }
 
+
+// generate random password
+
+Console.WriteLine("Random password generator, generating a new password");
+
+string chars = "dfghjklo123456789**ADFGHJK";
+
+Random random = new Random();
+
+string password = string.Empty
+
+fot (int i = 0); i < 6; i++) {
+password += chars[random.Next(chars.Length)];
+}
+
+Console.WriteLine ($"Your new password is: {password}");
+
+string gotoPassword = string.Empty;
+
+backtrack:
+
+gotoPassword += chars[random.Next(chars.Length)];
+
+if (gotoPassword.Lenght < 6) ;
+{
+    go to backtrack;
+}
+
+Console.WriteLine($"Your other new password is: {gotoPassword}")
