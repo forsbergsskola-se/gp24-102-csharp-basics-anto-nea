@@ -1,10 +1,24 @@
-﻿Console.WriteLine("What's your age?");
-int age = int.Parse(Console.ReadLine());
+﻿Console.WriteLine("Give me a seed number");
 
-bool isChild = age <= 12;
-bool isTeenager = age >= 13 && age <= 19;
-bool isAdult = age > 19;
+int userSeed = int.Parse(Console.ReadLine());
 
-Console.WriteLine("You are a child: " + isChild);
-Console.WriteLine("You are a teenager: " + isTeenager);
-Console.WriteLine("You are an adult: " + isAdult);
+Random randWithoutSeed = new Random();
+Random specificRandSeed = new Random(userSeed);
+
+//Console.WriteLine(randWithoutSeed.Next());
+//Console.WriteLine(randWithoutSeed.NextDouble());
+//Console.WriteLine(randWithoutSeed.NextSingle());
+
+Console.WriteLine(randWithoutSeed.Next(0,5)); //0..4 first number is inclusive, second is exclusive (excluded).
+
+Random rand = new Random ();
+
+double chanceOfSuccess = 0.5f;
+double roll = rand.NextDouble();
+
+if (chanceOfSucces > roll) {
+    Console.Writeline ("Success");
+    } else {
+    Console.WriteLine ("Failure");
+}
+
