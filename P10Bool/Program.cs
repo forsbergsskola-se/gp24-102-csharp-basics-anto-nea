@@ -27,7 +27,7 @@ if (chanceOfSucces > roll) {
 
 Console.WriteLine("Random password generator, generating a new password");
 
-string chars = "dfghjklo123456789**ADFGHJK";
+string chars = "$%#@!*abcdefghijklmnopqrstuvwxyz1234567890?;:ABCDEFGHIJKLMNOPQRSTUVWXYZ^&;";
 
 Random random = new Random();
 
@@ -50,4 +50,4 @@ if (gotoPassword.Lenght < 6) ;
     go to backtrack;
 }
 
-Console.WriteLine($"Your other new password is: {gotoPassword}")
+Console.WriteLine($"Your other new password is: {gotoPassword}");
