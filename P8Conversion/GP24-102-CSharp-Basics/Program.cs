@@ -1,8 +1,17 @@
-﻿Console.WriteLine("Give me a number");
-string input = Console.ReadLine(); 
-float inputFloat = float.Parse(input);
-Console.WriteLine(inputFloat);
+﻿Console.WriteLine("Give me a number:");
+string input = Console.ReadLine();
 
-int intInput = Convert.ToInt32(inputFloat);
-intInput =  (int) inputFloat;
-Console.WriteLine(intInput);
+Console.WriteLine(input);
+float inputFloat;
+
+try
+{
+    inputFloat = float.Parse(input.Replace(',', '.'));
+    int intInput = (int)inputFloat;
+    Console.WriteLine(intInput);
+}
+
+catch (FormatException)
+{
+    Console.WriteLine("Invalid format for float input!");
+}
