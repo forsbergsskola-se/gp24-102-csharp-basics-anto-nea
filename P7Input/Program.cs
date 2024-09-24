@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("What's your name?");
+
+string Antonia = Console.ReadLine();
+
+Console.WriteLine($"Hello, {Antonia}!"); //$ = interpolation; embed variable values within a string
