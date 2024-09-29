@@ -65,8 +65,7 @@ Console.WriteLine("Please input how much you want to withrawl:");
 int withrawAmount;
     while (!int.TryParse(Console.ReadLine(), out withrawAmount)) {
         Console.WriteLine("Only numerical values can be used to withdraw money, please try again!").;
-}    
-    = int.TryParse(Console.ReadLine()); 
+int.TryParse(Console.ReadLine()); 
     
     
 // P13_2Triangle
@@ -85,4 +84,5 @@ if (!parsed)
 continuattion:
 Console.WriteLine(new string('#', desiredSize--));
 if(desiredSize >0)
-    goto continuattion;
+    goto continuation;
+    
